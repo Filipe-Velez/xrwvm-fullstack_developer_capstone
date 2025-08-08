@@ -124,3 +124,32 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content-panels {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start; /* Aligns content to the top of each panel */
+}
+
+.panel {
+    flex: 1; /* Each panel takes up equal space */
+}
+
+/* Styling for the image panel */
+.image-panel img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
