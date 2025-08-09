@@ -28,12 +28,20 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+host_first = 'https://filipeaavele-8000.theiadockernext'
+host_second = '-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+host_total = host_first + host_second
+
+trusted_first = 'https://filipeaavele-8000.theiadockernext-0-labs'
+trusted_second = '-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+trusted_total = trusted_first + trusted_second
+
 ALLOWED_HOSTS = [
     'localhost',
-    'localhost_url'
+    host_second
 ]
 CSRF_TRUSTED_ORIGINS = [
-    'trusted_origin_url'
+    trusted_total
 ]
 
 REST_FRAMEWORK = {
